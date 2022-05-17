@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Independent Project</title>
+    <style>
+        body{
+           /* background-image: url(bg2.jpg);
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;*/
+            background-color: black;
+            width: 100%;
+            margin: 0%;
+            overflow-x:hidden;
+        }
+        .logo{
+            margin-top: 0px;
+            color: rgb(244, 233, 233);
+            font-size:xx-large;
+            font-weight:bolder;
+        }
+        .navbar{
+            background: transparent;
+        }
+        .navigation{
+            display: flex;
+            float: right;
+            justify-content: flex-end;
+        }
+        body::before{
+            opacity: 0.3;
+        }
+        .item{
+            text-decoration: none;
+            text-align: end;
+            font-size:x-large;
+            color: rgb(252, 243, 243);
+        }
+        .item:hover{
+            text-decoration:underline;
+            text-align: end;
+            font-size:x-large;
+            color:rgb(254, 248, 248);
+        }
+        li{
+            list-style: none;
+            padding: 8px;
+        }
+        section{
+            margin: 5px;
+        }
+        .container{
+            display: flex;
+            justify-items: flex-end;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .container2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            min-height: 100vh;
+
+        }
+        .box{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px;
+            transition: 0.5s;
+            background: #060c21;
+        }
+        .box:hover{
+            height: 400px;
+        }
+        .box .imgbox{
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .box .imgbox img{
+            max-width: 100%;
+            opacity: 0.1;
+            transition: 0.5s;
+        }
+        .box:hover .imgbox img{
+            opacity: 1;
+        }
+        .box::before{
+            position: absolute;
+            content: "";
+            inset: -2px;
+            background: #fff;
+            z-index: -1;
+        }
+        .box::after{
+            position:absolute;
+            content: "";
+            inset: -2px;
+            background: #fff;
+            z-index: -1;
+            filter: blur(40px);
+        }
+        .box::before, .box::after{
+            background:linear-gradient(235deg,#89ff00,#010615,#00bcd4);
+        }
+        .box:nth-child(2)::before, .box:nth-child(2)::after{
+            background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
+        }
+        .box .content{
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+            right: 10px;
+            height: 90px;
+            background: rgba(0,0,0,0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            opacity: 0;
+            transition: 0.5s;
+        }
+        .box:hover .content{
+            opacity: 1;
+        }
+        .box .content h2{
+            font-size: 20px;
+            color: #fff;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 1px;
+        }
+        .box .content h2 span{
+            font-size: 14px;
+            color: #fff;
+            font-weight: 200;
+            letter-spacing: 2px;
+        }
+        .container3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            min-height: 100vh;
+        }
+        
+        .box2{
+            position: relative;
+            width: 500px;
+            height: 520px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px;
+            transition: 0.5s;
+            background: #060c21;
+        }
+        .box2:hover{
+            height: 540px;
+        }
+        .box2 .imgbox{
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .box2 .imgbox img{
+            max-width: 100%;
+            opacity: 0.1;
+            transition: 0.5s;
+        }
+        .box2:hover .imgbox img{
+            opacity: 1;
+        }
+        .box2::before{
+            position: absolute;
+            content: "";
+            inset: -2px;
+            background: #fff;
+            z-index: -1;
+        }
+        .box2::after{
+            position:absolute;
+            content: "";
+            background: #fff;
+            z-index: -1;
+            filter: blur(40px);
+        }
+        .box2::before, .box2::after{
+            background:linear-gradient(235deg,#89ff00,#010615,#00bcd4);
+        }
+        .box2:nth-child(2)::before, .box2:nth-child(2)::after{
+            background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
+        }
+    </style>
+</head>
+<body >
+    <div class="start">
+    <div class="container">
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li ><a class="item" href="home.html" target="_self">Home</a></li>
+                <li ><a class="item" href="team.html">Team</a></li>
+                <li ><a class="item" href="iot.html">IOT</a></li>
+                <li ><a class="item" href="project.html">Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <!--Logo-->
+        <!--<img src="D:\code\webdev\UttamVlog\pics\logo.png" alt=".." width="50px" height="50px">-->
+        <p class="logo">Independent Project</p>
+    </section>
+    </div>
+</div>
+
+<div class="container2">
+    <div class="box">
+    <div class="imgbox">
+        <img src="handgesture.jpeg" alt="..">
+    </div>
+    <div class="content">
+        <h2>Transmitter Circuit <br><span>[Hand Gesture Control]</span></h2>
+    </div>
+    </div>
+<div class="box">
+    <div class="imgbox">
+        <img src="cardesign.jpeg" alt="..">
+    </div>
+    <div class="content">
+        <h2>Receiver Circuit<br><span>[Car Design]</span></h2>
+    </div>
+</div>
+
+    </div>
+    <div class="container3">
+        <div class="box2">
+            <div class="imgbox">
+            <video src="finalvid.mp4" width="500px" height="500vh" controls></video>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
