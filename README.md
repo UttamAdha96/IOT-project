@@ -1,1 +1,1 @@
-home.html
+index.html
