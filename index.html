@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Independent Project</title>
+    <style>
+        body{
+           /* background-image: url(bg2.jpg);
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;*/
+            background-color: black;
+            width: 100%;
+            margin: 0%;
+            overflow-x:hidden;
+        }
+        .logo{
+            margin-top: 0px;
+            color: rgb(244, 233, 233);
+            font-size:xx-large;
+            font-weight:bolder;
+        }
+        .navbar{
+            background: transparent;
+        }
+        .navigation{
+            display: flex;
+            float: right;
+            justify-content: flex-end;
+        }
+        body::before{
+            opacity: 0.3;
+        }
+        .item{
+            text-decoration: none;
+            text-align: end;
+            font-size:x-large;
+            color: rgb(252, 243, 243);
+        }
+        .item:hover{
+            text-decoration:underline;
+            text-align: end;
+            font-size:x-large;
+            color:rgb(254, 248, 248);
+        }
+        li{
+            list-style: none;
+            padding: 8px;
+        }
+        section{
+            margin: 5px;
+        }
+        .car{
+            top: 80px;
+            right:10px;
+            width: 200px;
+            animation: car-ani 20s 1s forwards;
+        }
+        @keyframes car-ani {
+            to{
+                transform: 
+                translate(1500px,100px);
+            }
+            
+        }
+        .container{
+            display: flex;
+            justify-items: flex-end;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .btn{
+            padding-left: 10px;
+            padding-bottom: 10px;
+            width: 116px;
+            border: none;
+            border-radius: 10px;
+            background: transparent;
+            align-items: center;
+            text-decoration: none;
+            cursor: pointer;
+            display: flex;
+            width: 12%;
+        }
+        .container2{
+            height: 550px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+        }
+        .text{
+            color: rgb(250, 246, 246);
+            margin-top: 100px;
+            margin-left: 10px;
+            padding: 30px;
+            width: 550px;
+            height: 400px;
+        }
+        .img{
+            margin-top: 100px;
+            margin-right: 10px;
+            width: 550px;
+            height: 400px;
+            box-shadow: 7px 7px 3px rgb(222, 230, 230);
+        }
+    </style>
+</head>
+<body >
+    <div class="start">
+    <div class="container">
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li ><a class="item" href="index.html" target="_self">Home</a></li>
+                <li ><a class="item" href="team.html">Team</a></li>
+                <li ><a class="item" href="iot.html">IOT</a></li>
+                <li ><a class="item" href="project.html">Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <!--Logo-->
+        <!--<img src="D:\code\webdev\UttamVlog\pics\logo.png" alt=".." width="50px" height="50px">-->
+        <p class="logo">Independent Project</p>
+    </section>
+    </div>
+</div>
+
+<div class="scene">
+    <img src="carani.jpg" class="car" alt="..">
+</div>
+<div class="container2">
+
+    <div class="text">
+        <h2>IOT Based Hand Gesture Car</h2>
+        <p>
+            A Gesture Controlled robot is a robot which can be controlled by your hand gestures. You just need to have a small transmitting device in your hand, which included an acceleration meter to transmit an appropriate command to the robot so that it can do whatever we want.
+        </p>
+    </div>
+
+    <div class="img">
+        <img src="main1.png" alt="opps..img not found !!" width="550vw" height="400vh">
+    </div>
+</div>
+</body>
+</html>
